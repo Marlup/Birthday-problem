@@ -1,7 +1,8 @@
 # Birthday Paradox Probability Calculator
 
-![birthday_problem_cdf](https://github.com/Marlup/Birthday-problem/assets/51297824/4d9fe63b-4081-4458-a059-33eda29d3a51)
+![birthday_problem_cdf](https://github.com/Marlup/Birthday-problem/](https://github.com/Marlup/Birthday-problem/blob/main/birthday_problem_cdf.png)
 
+<img source=>
 
 This Python notebook calculates the probability of at least two people sharing the same birthday in a room with a given number of people. It also includes a basic visualization of the accumulated probability.
 
