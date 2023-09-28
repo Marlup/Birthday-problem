@@ -1,8 +1,20 @@
 # Birthday Paradox Probability Calculator
 
+This Python notebook calculates the probability of at least two people sharing the same birthday in a room with a given number of people. It also includes a basic visualization of the accumulated probability.
+
 ![birthday_problem_cdf](https://github.com/Marlup/Birthday-problem/blob/main/birthday_problem_cdf.png)
 
-This Python notebook calculates the probability of at least two people sharing the same birthday in a room with a given number of people. It also includes a basic visualization of the accumulated probability.
+
+
+## Table of Contents
+
+- [Usage](#usage)
+- [Code Explanation](#code-explanation)
+- [Probability Calculation](#probability-calculation)
+- [Probability Visualization](#probability-visualization)
+- [Example Output](#example-output)
+- [License](#license)
+
 
 ## Usage
 
@@ -22,40 +34,40 @@ The code is divided into two parts:
 
 The first part of the code calculates the probability of at least two people sharing the same birthday for various room sizes. It follows these steps:
 
-Set the period to 365, representing the number of days in a year.
++ Set the period to 365, representing the number of days in a year.
 
-Create a list cases containing the number of people in the room that you want to calculate the probabilities for.
++ Create a list cases containing the number of people in the room that you want to calculate the probabilities for.
 
-Initialize an empty list Ps to store the calculated probabilities.
++ Initialize an empty list Ps to store the calculated probabilities.
 
-For each value n_agents in the cases list, the script calculates the probability of no one sharing a birthday and subtracts it from 1 to get the probability of at least two people sharing a birthday. The result is rounded to four decimal places.
++ For each value n_agents in the cases list, the script calculates the probability of no one sharing a birthday and subtracts it from 1 to get the probability of at least two people sharing a birthday. The result is rounded to four decimal places.
 
-The probabilities are printed to the console.
++ The probabilities are printed to the console.
 
 ### Probability Visualization
 
 The second part of the code visualizes the accumulated probability for different room sizes using Matplotlib. It includes:
 
-A line plot of the accumulated probability.
++ A line plot of the accumulated probability.
++ Red dots on the plot indicating the probabilities when there are 23 and 41 people in the room.
++ Annotations showing the exact probabilities at those points.
++ Labels for the x and y axes.
++ A legend for the plot.
 
-Red dots on the plot indicating the probabilities when there are 23 and 41 people in the room.
+## Example Output
 
-Annotations showing the exact probabilities at those points.
-
-Labels for the x and y axes.
-
-A legend for the plot.
-
-Example Output
 Here's an example of the output:
 
-Probability of at least two matches in a room:
+```python
+  Probability of at least two matches in a room:
 
-If 1 people: 0.0
-If 3 people: 0.0082
-If 5 people: 0.0271
-If 7 people: 0.0546
+  If 1 people: 0.0
+  If 3 people: 0.0082
+  If 5 people: 0.0271
+  If 7 people: 0.0546
 ...
+```
 
-License
+## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
